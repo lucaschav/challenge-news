@@ -65,7 +65,7 @@ const Filter = () => {
                 .required('el campo PALABRA CLAVE es requerido')
         }),
         onSubmit: values => {
-            debugger
+            
             setBusca(values.buscador)
             changeNews(1, size, pais, fechaDesde, fechaHasta, values.buscador)
         },
