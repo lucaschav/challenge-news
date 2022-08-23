@@ -1,2 +1,0 @@
-- Modificar el puerto del archivo "appsettings.json" que se encuentra de la carpeta SRC, por el puerto que devuelva la api a la hora de correrla.
-NOTA: solo modificar los numeros del puerto no todo el string
