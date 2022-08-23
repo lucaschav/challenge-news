@@ -67,7 +67,7 @@ const Filter = () => {
         onSubmit: values => {
             debugger
             setBusca(values.buscador)
-            changeNews(page, size, pais, fechaDesde, fechaHasta, values.buscador)
+            changeNews(1, size, pais, fechaDesde, fechaHasta, values.buscador)
         },
     })
 
@@ -140,7 +140,7 @@ const Filter = () => {
                         </Grid>
                         <Box component="form" type="post" onSubmit={formik.handleSubmit} sx={{ mt: 1 }}>
                             <Grid container justifyContent='space-between'>
-                                <Grid md={6}>
+                                <Grid md={6} xs={12}>
                                     <Grid md={10} sx={{ marginTop: '15px' }}>
                                         <TextField
                                             id="fechaDesde"
@@ -156,7 +156,7 @@ const Filter = () => {
                                               }}
                                         />
                                     </Grid>
-                                    <Grid md={10} sx={{ marginTop: '10px' }}>
+                                    <Grid md={10} xs={12} sx={{ marginTop: '10px' }}>
                                         <TextField
                                             id="fechaHasta"
                                             type='date'
@@ -172,8 +172,8 @@ const Filter = () => {
                                         />
                                     </Grid>
                                 </Grid>
-                                <Grid md={6}>
-                                    <Grid md={10}>
+                                <Grid md={6} xs={12}>
+                                    <Grid md={12}>
                                         <TextField
                                             margin="normal"
                                             fullWidth
@@ -191,7 +191,8 @@ const Filter = () => {
                                             </Typography>
                                         ) : null}
                                     </Grid>
-                                    <Grid md={10}>
+                                    <Grid md={12}>
+                                        <Grid>
                                         <Button
                                             type="submit"
                                             fullWidth
@@ -200,6 +201,7 @@ const Filter = () => {
                                         >
                                             Buscar
                                         </Button>
+                                        </Grid>
                                     </Grid>
                                 </Grid>
                             </Grid>
