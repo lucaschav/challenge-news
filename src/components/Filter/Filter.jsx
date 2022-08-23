@@ -72,7 +72,7 @@ const Filter = () => {
     })
 
     const changeNews = async (pageSelect = page, pageSize = size, paisSelect = pais, fechaDes = fechaDesde, fechaHas = fechaHasta, buscar) => {
-        debugger
+        
         setCarga(true)
         if (fechaDes !== null) {
             fechaDes = '&startDate=' + Moment(fechaDesde).format('yyyy-MM-DD')
